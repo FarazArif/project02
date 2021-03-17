@@ -31,7 +31,7 @@ jobs:
         with:
           node-version: 12
           
-      - uses: action-get-npm-version@master
+      - uses: borales/actions-yarn@v2.0.0
         with:
           cmd: install 
           
