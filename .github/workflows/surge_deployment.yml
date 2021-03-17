@@ -36,10 +36,10 @@ jobs:
           cmd: install 
           
       - name: Build React App
-        run: npm run build
+        run: npm build
         
       - name: Install Surge
         run: npm install --g surge
         
       - name: Deploy to surge
-        run: surge ./build project0215103.surge.su --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build project0215103.surge.sh --token ${{secrets.SURGE_TOKEN}}
